@@ -1,0 +1,214 @@
+/*--------colors------------*/
+$th_buttoncolor: #ea625c;
+$th_border: #cdcdcd;
+$th_black: #000000;
+$th_white: #ffffff;
+
+*{
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+}
+@media (min-width: 1200px){
+	.container{
+		max-width:900px;
+	}
+}
+button{
+	padding: 10px 30px;
+	color: #fff;
+	border: 0px;
+	background: $th_buttoncolor;
+	text-transform: uppercase;
+	font-size: 14px;
+	transition: all 500ms ease;
+	position: relative;
+	&:before{
+		content: '';
+		position: absolute;
+		bottom: 0px;
+		left: 0px;
+		width: 0px;
+		height: 42px;
+		background: rgba(255,255,255,0.3);
+		transition: all 2s ease;
+	}
+	&:focus{
+		outline: 0px;
+	}
+	&:hover{
+		&:before{
+			width: 100%;
+		}
+	}
+}
+header{
+	.navbar-expand-lg{
+		.form-inline{
+			margin-left: 30px;
+				.form-control{
+				border: 0px;
+    			border-bottom: 1px solid $th_border;
+    			border-radius: 0px;
+					&:focus{
+						border-bottom: 1px solid $th_black;
+						box-shadow:none;
+					}
+			}
+		}
+			.navbar-nav{
+			.nav-link{
+			    padding-right: .9rem;
+    			padding-left: .9rem;
+				&:hover{
+					border-bottom: 1px solid $th_black;
+				}
+			}
+		}
+		
+	}
+}
+/*-----------------first section--------------*/
+.first_section{
+	margin-top: 50px;
+	border-bottom: 1px solid $th_border;
+	background:{
+		image: url(../img/watches.jpg);
+		size:50%;
+		position:right -204px top;
+		repeat: no-repeat;
+	}
+	padding:120px 0px;
+	h2{
+		font-size: 45px;
+		margin-bottom: 40px;
+	}
+	p{
+		text-align: justify;
+		padding-left: 20px;
+		position: relative;
+		margin-bottom: 40px;
+		&:before{
+			content: '';
+			position: absolute;
+			width: 2px;
+			height: 100px;
+			left: 0px;
+			background: $th_black;
+			
+		}
+	}
+}
+/*--------------second section---------*/
+.second_section{
+	padding: 50px 0px;
+	h3{
+		text-transform: uppercase;
+		font-size: 15px;
+		margin-bottom: 40px;
+	}
+	a{
+		&:hover{
+			text-decoration: none;
+		}
+	}
+	p{
+		span{
+			color: $th_buttoncolor;
+			text-transform: uppercase;
+			position: relative;
+			padding-left: 60px;
+			transition: padding-left .5s;
+    		-webkit-transition: padding-left .5s;
+			&:hover{
+				padding-left: 65px;
+				&:before{
+					width: 50px;
+				}
+			}
+			&:before{
+				content: '';
+				position: absolute;
+				width: 40px;
+				left: 0px;
+				top: 7px;
+				height: 2px;
+				background: $th_buttoncolor;
+				transition: width .5s;
+    		-webkit-transition: width .5s;
+			}
+		}
+	}
+	.nike_port{
+		margin-top: 50px;
+		.brands_light{
+			padding: 105px 15px;
+			h2{
+			font-size: 45px;
+			margin-bottom: 40px;
+		}
+		p{
+		text-align: justify;
+		padding-left: 20px;
+		position: relative;
+		margin-bottom: 40px;
+		&:before{
+			content: '';
+			position: absolute;
+			width: 2px;
+			height: 100px;
+			left: 0px;
+			background: $th_black;
+			
+		}
+		}
+		}		
+		.col-sm-6{
+			img{
+				width: 100%;
+			}
+		}
+	}
+}
+/*--------------third section---------------*/
+.third_section{
+	padding: 100px 0px;
+	margin-top: 50px;
+	background: {
+		image:url(../img/runners.jpg);
+		size:100%;
+		repeat: no-repeat;
+	}
+		h2{
+			font-size: 45px;
+			margin-bottom: 40px;
+			color: $th_white;
+		}
+		p{
+			text-align: justify;
+			padding-left: 20px;
+			position: relative;
+			margin-bottom: 40px;
+			color: $th_white;
+		&:before{
+			content: '';
+			position: absolute;
+			width: 2px;
+			height: 100px;
+			left: 0px;
+			background: $th_white;
+			
+		}
+		}
+}
+/*------------media queries-------------*/
+@media (min-width: 320px) and (max-width: 767px){
+	.third_section{
+		background-size: cover;
+	}
+	.first_section{
+		padding-top: 0px;
+	}
+	header .navbar-expand-lg .form-inline{
+		margin-left: 0px;
+	}
+}

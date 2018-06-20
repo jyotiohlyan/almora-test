@@ -1,0 +1,48 @@
+/*--------colors------------*/
+* { font-family: 'Roboto', sans-serif; font-size: 14px; }
+
+@media (min-width: 1200px) { .container { max-width: 900px; } }
+button { padding: 10px 30px; color: #fff; border: 0px; background: #ea625c; text-transform: uppercase; font-size: 14px; transition: all 500ms ease; position: relative; }
+button:before { content: ''; position: absolute; bottom: 0px; left: 0px; width: 0px; height: 42px; background: rgba(255, 255, 255, 0.3); transition: all 2s ease; }
+button:focus { outline: 0px; }
+button:hover:before { width: 100%; }
+
+header .navbar-expand-lg .form-inline { margin-left: 30px; }
+header .navbar-expand-lg .form-inline .form-control { border: 0px; border-bottom: 1px solid #cdcdcd; border-radius: 0px; }
+header .navbar-expand-lg .form-inline .form-control:focus { border-bottom: 1px solid #000000; box-shadow: none; }
+header .navbar-expand-lg .navbar-nav .nav-link { padding-right: .9rem; padding-left: .9rem; }
+header .navbar-expand-lg .navbar-nav .nav-link:hover { border-bottom: 1px solid #000000; }
+
+/*-----------------first section--------------*/
+.first_section { margin-top: 50px; border-bottom: 1px solid #cdcdcd; background-image: url(../img/watches.jpg); background-size: 50%; background-position: right -204px top; background-repeat: no-repeat; padding: 120px 0px; }
+.first_section h2 { font-size: 45px; margin-bottom: 40px; }
+.first_section p { text-align: justify; padding-left: 20px; position: relative; margin-bottom: 40px; }
+.first_section p:before { content: ''; position: absolute; width: 2px; height: 100px; left: 0px; background: #000000; }
+
+/*--------------second section---------*/
+.second_section { padding: 50px 0px; }
+.second_section h3 { text-transform: uppercase; font-size: 15px; margin-bottom: 40px; }
+.second_section a:hover { text-decoration: none; }
+.second_section p span { color: #ea625c; text-transform: uppercase; position: relative; padding-left: 60px; transition: padding-left .5s; -webkit-transition: padding-left .5s; }
+.second_section p span:hover { padding-left: 65px; }
+.second_section p span:hover:before { width: 50px; }
+.second_section p span:before { content: ''; position: absolute; width: 40px; left: 0px; top: 7px; height: 2px; background: #ea625c; transition: width .5s; -webkit-transition: width .5s; }
+.second_section .nike_port { margin-top: 50px; }
+.second_section .nike_port .brands_light { padding: 105px 15px; }
+.second_section .nike_port .brands_light h2 { font-size: 45px; margin-bottom: 40px; }
+.second_section .nike_port .brands_light p { text-align: justify; padding-left: 20px; position: relative; margin-bottom: 40px; }
+.second_section .nike_port .brands_light p:before { content: ''; position: absolute; width: 2px; height: 100px; left: 0px; background: #000000; }
+.second_section .nike_port .col-sm-6 img { width: 100%; }
+
+/*--------------third section---------------*/
+.third_section { padding: 100px 0px; margin-top: 50px; background-image: url(../img/runners.jpg); background-size: 100%; background-repeat: no-repeat; }
+.third_section h2 { font-size: 45px; margin-bottom: 40px; color: #ffffff; }
+.third_section p { text-align: justify; padding-left: 20px; position: relative; margin-bottom: 40px; color: #ffffff; }
+.third_section p:before { content: ''; position: absolute; width: 2px; height: 100px; left: 0px; background: #ffffff; }
+
+/*------------media queries-------------*/
+@media (min-width: 320px) and (max-width: 767px) { .third_section { background-size: cover; }
+  .first_section { padding-top: 0px; }
+  header .navbar-expand-lg .form-inline { margin-left: 0px; } }
+
+/*# sourceMappingURL=main.css.map */
